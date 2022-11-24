@@ -1,6 +1,4 @@
 import { Component, HostBinding } from '@angular/core';
-import { environment } from 'src/environments/environment';
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,9 +6,7 @@ import { environment } from 'src/environments/environment';
 })
 export class AppComponent {
   title = 'luisarispe';
-  currentApplicationVersion = environment.appVersion;
   constructor(){
-    console.log(this.currentApplicationVersion);
   }
 
 }
